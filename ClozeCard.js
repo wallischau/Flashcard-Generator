@@ -1,8 +1,14 @@
+/* Constructor: cloze card */
+/* Author: Wallis Chau     */
+/* Date: 10/1/17           */
+
 function ErrHandling(str) {
 	this.str = str;
 	console.log(str);
 }
 
+/* constructor: cloze card                                                    */
+/* Description: define constructor. If cloze is not part of text, throw error */
 function ClozeCard(text, cloze) {
 	if (this instanceof ClozeCard) {
 		pattern = new RegExp(cloze, 'g');
